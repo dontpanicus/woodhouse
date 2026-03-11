@@ -2,10 +2,14 @@
   "type": "micro",
   "wake_word": "Woodhouse",
   "author": "dontpanicus",
-  "model": "https://raw.githubusercontent.com/dontpanicus/woodhouse/main/Woodhouse_20260310_205938.tflite",
-  "version": 1,
+  "model": "Woodhouse_20260310_205938.tflite",
+  "trained_languages": ["en"],
+  "version": 2,
   "micro": {
-    "probability_cutoff": 0.5,
-    "sliding_window_average_size": 10
+    "probability_cutoff": 0.97,
+    "feature_step_size": 10,
+    "sliding_window_size": 5,
+    "tensor_arena_size": 22860,
+    "minimum_esphome_version": "2024.7.0"
   }
 }
